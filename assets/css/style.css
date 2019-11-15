@@ -1,0 +1,109 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+body {
+  padding-top: 57px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background: #000;
+  position: fixed;
+  padding: 15px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+header nav {
+  display: flex;
+  margin-left: auto;
+}
+
+header nav > li a:hover {
+  color: yellow;
+}
+
+/* Header sticky styles*/
+header.sticky {
+  padding: 10px 0;
+}
+
+header.sticky .logo {
+  font-size: 18px;
+}
+
+/* Hero Styles */
+.hero {
+  background: url("https://wallpaperplay.com/walls/full/d/6/8/178663.jpg")
+    center center no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.hero-content {
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content * {
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 60px;
+}
+
+.hero-desc {
+  font-size: 30px;
+}
